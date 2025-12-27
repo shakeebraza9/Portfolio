@@ -3,7 +3,7 @@ import { adminRoutes } from './adminRoutes.js'
 import UserLayout from '@/layouts/UserLayout.vue'
 import UserHome from '@/views/user/UserHome.vue'
 import UserAbout from '@/views/user/UserAbout.vue'
-
+import ProjectDetail from '@/views/user/ProjectDetail.vue'
 const routes = [
   {
     path: '/',
@@ -11,6 +11,7 @@ const routes = [
     children: [
       { path: '', component: UserHome },
       { path: 'about', component: UserAbout },
+      {path: '/project/:slug',name: 'project-detail',component: ProjectDetail}
     ]
   },
   ...adminRoutes 

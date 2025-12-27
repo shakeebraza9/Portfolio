@@ -41,15 +41,7 @@ watch(isDark, (val) => {
     >
       About
     </v-btn>
-    <v-btn
-      text
-      class="mx-2"
-      rounded
-      to="/admin"
-      color="white"
-    >
-      Admin
-    </v-btn>
+    
 
     <v-divider vertical class="mx-4"></v-divider>
 
