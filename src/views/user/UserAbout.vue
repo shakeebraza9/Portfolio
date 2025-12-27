@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-10">
     <v-row align="center" justify="center">
-      <!-- Profile Picture -->
+
       <v-col cols="12" md="4" class="text-center">
         <v-img
           src="profile.jpeg"
@@ -12,7 +12,7 @@
           contain
         ></v-img>
 
-        <!-- Social Links -->
+
         <v-row class="mt-4" justify="center" dense>
           <v-btn icon large href="https://www.facebook.com/muhammad.shakeeb.raza/" target="_blank">
             <v-icon size="28">mdi-facebook</v-icon>
@@ -26,7 +26,7 @@
         </v-row>
       </v-col>
 
-      <!-- About Text + Buttons -->
+
       <v-col cols="12" md="6">
         <h1 class="text-h4 font-weight-bold mb-3">Muhammad Shakeeb Raza</h1>
         <p class="text-subtitle-1 mb-4">
@@ -62,7 +62,6 @@
       </v-col>
     </v-row>
 
-    <!-- Work Experience -->
     <h2 class="text-h5 font-weight-bold mt-10 mb-4">Work Experience</h2>
     <v-row>
       <v-col cols="12" md="6" v-for="(job, i) in workExperience" :key="i">
@@ -78,7 +77,7 @@
       </v-col>
     </v-row>
 
-    <!-- Skills -->
+
     <h2 class="text-h5 font-weight-bold mt-10 mb-4">Skill Highlights</h2>
     <v-row dense>
       <v-col cols="auto" v-for="(skill, i) in skills" :key="i">
@@ -89,7 +88,7 @@
 </template>
 
 <script setup>
-const email = 'shakeeb@example.com'
+const email = 'shakeebraza90@gmail.com'
 
 function copyEmail() {
   navigator.clipboard.writeText(email)
@@ -101,7 +100,7 @@ function copyEmail() {
     })
 }
 
-// Work experience array
+
 const workExperience = [
   {
     company: 'Fission Fox',
