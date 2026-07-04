@@ -73,5 +73,103 @@
     "author": "Muhammad Shakeeb Raza",
     "technologies": "HTML 5,CSS 3,Javascript,Laravel,PHP,Jquery",
     "longDescription": "Developed a coupon-based website that allows users to browse deals, offers, and categories with ease. Implemented a clean UI, dynamic content loading, and category-based filtering. The platform is optimized for performance and usability, making it easy for users to find relevant discounts while providing a scalable backend for future growth."
+  },
+  {
+    "id": 5,
+    "slug": "autoboli",
+    "title": "Autoboli",
+    "category": "Automobile Auction Platform",
+    "description": "A high-performance live digital vehicle bidding and auction marketplace built with real-time data streaming architectures.",
+    "images": "/autoboli/thumnail.png",
+    "viewLink": "https://test.92ashrafsoomro.com/",
+    "gallery": {
+      "Home Engine Hub": "/autoboli/home.png",
+      "About Enterprise": "/autoboli/about.png",
+      "Smart Fleet Dashboard": "/autoboli/dashboard.png",
+      "Vehicle Inventory Live": "/autoboli/vehicle.png",
+      "Micro Bidding Specs Page": "/autoboli/vehicle-details.png",
+      "Live Auction Room": "/autoboli/auction.png",
+      "Real-time Auction Finder": "/autoboli/auction_finder.png",
+      "Secure Escrow Checkout": "/autoboli/checkout.png",
+      "Pricing Matrix & Packages": "/autoboli/price.png",
+      "Admin Control Room Panel": "/autoboli/admin-vehicle-details.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Muhammad Shakeeb Raza",
+    "technologies": "Vue.js, PHP, Laravel, Tailwind CSS, JavaScript, JQuery, Socket.io, Redis, MySQL, Docker, AWS (EC2), Nginx, Python Selenium",
+    "longDescription": "Autoboli is a premium, real-time automobile auction system engineered to handle concurrent high-velocity bidding loops. The core engine is built using Laravel and Vue.js, featuring real-time state synchronization via Socket.io and Redis memory layers to achieve sub-millisecond data updates during active biddings. Deployed in containerized Docker microservices on AWS, the architecture incorporates smart search modules, advanced multi-parameter vehicle filters, a secure multi-tier financial checkout terminal, and a comprehensive admin monitoring matrix for dynamic live inventory operations."
+  },
+  {
+    "id": 6,
+    "slug": "pos_managment",
+    "title": "POS Management",
+    "category": "Enterprise ERP & POS Ecosystem",
+    "description": "A high-velocity Point of Sale and inventory ledger engine engineered for real-time retail transaction tracking and retail analytics.",
+    "images": "/pos/thumnail.png",
+    "viewLink": "https://portfolio.azamsolutions.com/pos/public/",
+    "gallery": {
+      "Secure Terminal Authentication": "/pos/login.png",
+      "Real-time Analytics Dashboard": "/pos/dashboard.png",
+      "Financial Statement & Ledger Matrix": "/pos/statment.png",
+      "Vendor Procurement Portal": "/pos/vendor.png",
+      "Dynamic PDF Invoicing System": "/pos/pdf.png"
+    },
+    "developedBy": "Shakeeb Raza, Owais Azam",
+    "author": "Owais Azam",
+    "technologies": "PHP, Laravel, JavaScript (ES6+), jQuery, MySQL, Tailwind CSS, HTML5, CSS3, Dynamic PDF Generation Engines",
+    "longDescription": "A robust commercial-grade Point of Sale (POS) and Enterprise Resource Planning framework designed to scale retail operations. Built using Laravel's robust MVC architecture, the platform orchestrates complex inventory tracking modules, multi-vendor procurement pipelines, and dynamic real-time financial ledger calculation matrices. Features a streamlined frontend for rapid transaction checkouts, responsive data grids for auditing, automated PDF invoice generation loops, and localized secure terminal sessions tailored to maximize data processing speed and minimize database deadlock latencies during concurrent checkout flows."
+  },
+  {
+    "id": 7,
+    "slug": "gym_fitness_center",
+    "title": "Gym Fitness Center",
+    "category": "Fitness SaaS & Club Management Management Engine",
+    "description": "A tailored member operations platform and operational engine designed for fitness tracking, membership workflows, and automated subscription management.",
+    "images": "/gym/thumnail.jpg",
+    "viewLink": "https://tailoredfitnesssolutions.com.au/",
+    "gallery": {
+      "Client Activation Portal": "/gym/home.png"
+    },
+    "developedBy": "Shakeeb Raza, Owais Azam",
+    "author": "Kreatix Solutions",
+    "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Responsive Layout Frameworks",
+    "longDescription": "A premium enterprise-level Fitness & Gym Operations Platform built to orchestrate end-to-end client conversion pipelines and membership workflows. Engineered using a structured PHP backend architecture coupled with a highly responsive frontend matrix, the system flawlessly handles dynamic membership tiered subscriptions, digital client intake operations, class schedules, and automated operational logging. The interface is optimized to deliver ultra-fast content delivery, clean data tracking for gym admins, and a seamless client experience designed to maximize member retention and simplify day-to-day fitness facility automation."
+  },
+  {
+    "id": 8,
+    "slug": "imedia_software_solutions",
+    "title": "Imedia Software Solutions",
+    "category": "Corporate Software Agency Platform",
+    "description": "A high-performance corporate agency web ecosystem designed to showcase enterprise software consulting capabilities and digital solutions architecture.",
+    "images": "/imedia/thumnail.png",
+    "viewLink": "https://imedia.com.pk/",
+    "gallery": {
+      "Enterprise Brand Hub": "/imedia/home.png",
+      "Solutions & Services Showcase": "/imedia/website.png",
+      "Lead Acquisition Interface": "/imedia/contact.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Imedia Software Solutions",
+    "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, Core SEO Optimization Frameworks",
+    "longDescription": "A premium enterprise-level corporate web ecosystem built to display end-to-end IT consulting pipelines and custom digital product architectures. Engineered using a highly modular PHP architecture and optimized for ultra-fast load times, the platform delivers clean data presentation for diverse software development pipelines, service listings, and integrated enterprise client acquisition forms. The frontend features smooth layouts, responsive interface mechanics, and strict cross-device accessibility matrices designed to establish maximum corporate authority and seamless user conversions."
+  },
+  {
+    "id": 8,
+    "slug": "smartdentalinnovations",
+    "title": "SmartDentalInnovations",
+    "category": "Healthcare Tech & Clinical Solutions Platform",
+    "description": "A premium medical-grade digital ecosystem engineered to showcase innovative dental technologies, specialized clinical products, and laboratory solutions.",
+    "images": "/smartdentalinnovations/thumnail.png",
+    "viewLink": "https://smartdentalinnovations.com/",
+    "gallery": {
+      "Clinical Innovation Hub": "/smartdentalinnovations/home.png",
+      "Specialized Product Catalog Matrix": "/smartdentalinnovations/product.png",
+      "Micro-Architectural Product Deep-Dive": "/smartdentalinnovations/product_detail.png",
+      "Healthcare Procurement Terminal": "/smartdentalinnovations/contact.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Imedia Software Solutions",
+    "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, Advanced Data Grid Filtration, Core SEO Architectures",
+    "longDescription": "SmartDentalInnovations is a cutting-edge healthcare informatics and product presentation ecosystem built to streamline dental asset discovery and corporate clinical outreach. Developed using a highly optimized and secure PHP architecture, the platform features a multi-tiered diagnostic and product catalog matrix with advanced multi-parameter filtering grids. The system is engineered for sub-second page performance, featuring secure client intake funnels, cross-device clinical compliance rendering, and search engine optimization frameworks designed to anchor maximum authority in the global biomedical and dental tech marketplace."
   }
 ]
