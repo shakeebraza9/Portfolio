@@ -25,20 +25,21 @@
     "sass": "^1.97.1",
     "sass-loader": "^16.0.6"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
+"eslintConfig": {
+  "root": true,
+  "env": {
+    "node": true,
+    "vue/setup-compiler-macros": true
   },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  },
+  "rules": {}
+},
   "browserslist": [
     "> 1%",
     "last 2 versions",

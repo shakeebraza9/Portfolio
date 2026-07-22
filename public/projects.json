@@ -154,7 +154,7 @@
     "longDescription": "A premium enterprise-level corporate web ecosystem built to display end-to-end IT consulting pipelines and custom digital product architectures. Engineered using a highly modular PHP architecture and optimized for ultra-fast load times, the platform delivers clean data presentation for diverse software development pipelines, service listings, and integrated enterprise client acquisition forms. The frontend features smooth layouts, responsive interface mechanics, and strict cross-device accessibility matrices designed to establish maximum corporate authority and seamless user conversions."
   },
   {
-    "id": 8,
+    "id": 9,
     "slug": "smartdentalinnovations",
     "title": "SmartDentalInnovations",
     "category": "Healthcare Tech & Clinical Solutions Platform",
@@ -171,5 +171,86 @@
     "author": "Imedia Software Solutions",
     "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, Advanced Data Grid Filtration, Core SEO Architectures",
     "longDescription": "SmartDentalInnovations is a cutting-edge healthcare informatics and product presentation ecosystem built to streamline dental asset discovery and corporate clinical outreach. Developed using a highly optimized and secure PHP architecture, the platform features a multi-tiered diagnostic and product catalog matrix with advanced multi-parameter filtering grids. The system is engineered for sub-second page performance, featuring secure client intake funnels, cross-device clinical compliance rendering, and search engine optimization frameworks designed to anchor maximum authority in the global biomedical and dental tech marketplace."
-  }
+  },
+  {
+    "id": 10,
+    "slug": "recyclepro",
+    "title": "Recycle Pro",
+    "category": "Electronics E-Commerce Platform",
+    "description": "A custom-built e-commerce platform for buying and selling refurbished electronics, featuring WordPress, custom plugins, Laravel-powered APIs, secure shopping, and a responsive user experience.",
+    "images": "/Recylepro/thumnail.png",
+    "viewLink": "https://www.recyclepro.co.uk/shop",
+    "gallery": {
+      "Homepage": "/Recylepro/Home.png",
+      "Product Listing": "/Recylepro/Product.png",
+      "Product Categories": "/Recylepro/Category.png",
+      "Product Details": "/Recylepro/Prodouct_detail.png",
+      "Shopping Cart": "/Recylepro/Add_to_card.png",
+      "Checkout": "/Recylepro/Checkout.png",
+      "Contact Us": "/Recylepro/Contact.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Imedia Software Solutions",
+    "technologies": "PHP, WordPress, Custom WordPress Plugins, Laravel REST APIs, HTML5, CSS3, JavaScript (ES6+), jQuery, Bootstrap, MySQL, AJAX, WooCommerce, Responsive Design, SEO",
+    "longDescription": "Recycle Pro is a feature-rich electronics e-commerce platform developed using WordPress with custom PHP development and Laravel REST APIs. The platform enables customers to browse and purchase refurbished and recycled electronic devices, including mobile phones, laptops, tablets, gaming consoles, smartwatches, headphones, and accessories. It includes custom WordPress plugins to extend business functionality, advanced product and category management, secure shopping cart and checkout, responsive design, and optimized performance. Laravel APIs power custom business logic and seamless data integration, while HTML5, CSS3, JavaScript, jQuery, and Bootstrap provide a fast, modern, and user-friendly shopping experience across all devices."
+  },
+  {
+    "id": 11,
+    "slug": "vehicle-auction-scraping-bots",
+    "title": "Vehicle Auction Scraping Bots",
+    "category": "Web Scraping & Data Automation",
+    "description": "Developed intelligent web scraping bots to automate the extraction of vehicle auction data from multiple online auction platforms, delivering structured and up-to-date datasets for business analysis.",
+    "images": "/ScrapingBots/thumbnail.png",
+    "viewLink": "",
+    "gallery": {
+      "Dashboard": "/ScrapingBots/github.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Client Project",
+    "technologies": "Python, Selenium, BeautifulSoup4, WebDriver, Requests, Pandas, CSV, JSON, MySQL, Cron Jobs",
+    "longDescription": "Developed advanced Python-based web scraping bots to automate the collection of vehicle auction data from multiple online auction platforms, including BCA, CCA, Aston Barclay, and Manheim. The bots were built using Selenium WebDriver and BeautifulSoup to handle dynamic content, automated browser interactions, pagination, login sessions, and detailed vehicle information extraction. The scraped data was cleaned, validated, and exported into structured CSV, JSON, and MySQL databases for reporting and analytics. The automation significantly reduced manual effort while ensuring accurate, real-time vehicle inventory data with scheduled execution through cron jobs."
+  },
+    {
+    "id": 12,
+    "slug": "norajo-karaoke",
+    "title": "Norajo Karaoke",
+    "category": "Entertainment & Attendance Management Platform",
+    "description": "A custom WordPress-based karaoke platform featuring QR code attendance management, event registration, user management, and responsive web interfaces for seamless event operations.",
+    "images": "/norajokaraoke/thumbnail.png",
+    "viewLink": "https://norajokaraoke.com/",
+    "gallery": {
+      "Homepage": "/norajokaraoke/home.png",
+      "Login": "/norajokaraoke/Login.png",
+      "QR Code Check-In": "/norajokaraoke/list.png",
+      "Admin Dashboard": "/norajokaraoke/dashboard.png",
+      "User Management": "/norajokaraoke/user_list.png",
+      "Event Management": "/norajokaraoke/sala_list.png"
+    },
+    "developedBy": "Shakeeb Raza",
+    "author": "Fissionfox Software Solutions",
+    "technologies": "PHP, WordPress, Custom WordPress Plugins, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, MySQL, AJAX, QR Code Integration, Attendance Management System",
+    "longDescription": "Norajo Karaoke is a custom-developed WordPress platform designed for managing karaoke events and attendee check-ins through an integrated QR Code Attendance Management System. The application enables administrators to create and manage events, register participants, generate unique QR codes, and track attendance in real time through a centralized dashboard. Custom WordPress plugins were developed to extend platform functionality, while PHP handled the backend business logic and MySQL managed all event and attendance records. JavaScript, jQuery, HTML5, CSS3, and Bootstrap were used to build a responsive and user-friendly interface, ensuring smooth event operations across desktop and mobile devices."
+  },
+  {
+  "id": 13,
+  "slug": "mrr-holidays",
+  "title": "MRR Holidays",
+  "category": "Travel & Tourism Booking Platform",
+  "description": "A comprehensive travel booking platform for car rentals, attraction tickets, and holiday services, built with Laravel and integrated APIs to deliver a fast and seamless booking experience.",
+  "images": "/mrrholidays/thumbnail.png",
+  "viewLink": "https://mrrholidays.my/",
+  "gallery": {
+    "Homepage": "/mrrholidays/home.png",
+    "Login": "/mrrholidays/login.png",
+    "Car Rental": "/mrrholidays/CarRental.png",
+    "Booking Details": "/mrrholidays/CarRentalf.png",
+    "Cars List": "/mrrholidays/cars_list.png",
+    "Attraction Tickets": "/mrrholidays/attractions.png",
+    "Attraction Details": "/mrrholidays/attraction_detail.png"
+  },
+  "developedBy": "Shakeeb Raza",
+  "author": "FissionFox Software Solutions",
+  "technologies": "PHP, Laravel, MySQL, Blade, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, REST APIs, AJAX, Responsive Design",
+  "longDescription": "MRR Holidays is a modern travel and tourism booking platform developed using Laravel and MySQL, designed to simplify online reservations for car rentals, attraction tickets, and holiday experiences. The platform features dynamic booking workflows, real-time API integrations, advanced search and filtering, secure reservation management, and a responsive user interface. Blade templates, HTML5, CSS3, JavaScript, and Tailwind CSS were used to create a fast and intuitive frontend, while Laravel powers the backend with clean architecture, secure business logic, and seamless API communication. The platform is optimized for performance, scalability, and a smooth booking experience across desktop and mobile devices."
+}
 ]
