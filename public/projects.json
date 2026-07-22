@@ -252,5 +252,27 @@
   "author": "FissionFox Software Solutions",
   "technologies": "PHP, Laravel, MySQL, Blade, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, REST APIs, AJAX, Responsive Design",
   "longDescription": "MRR Holidays is a modern travel and tourism booking platform developed using Laravel and MySQL, designed to simplify online reservations for car rentals, attraction tickets, and holiday experiences. The platform features dynamic booking workflows, real-time API integrations, advanced search and filtering, secure reservation management, and a responsive user interface. Blade templates, HTML5, CSS3, JavaScript, and Tailwind CSS were used to create a fast and intuitive frontend, while Laravel powers the backend with clean architecture, secure business logic, and seamless API communication. The platform is optimized for performance, scalability, and a smooth booking experience across desktop and mobile devices."
+},
+{
+  "id": 14,
+  "slug": "fennec-marketplace",
+  "title": "Fennec",
+  "category": "Online Marketplace Platform",
+  "description": "A marketplace platform similar to Gumtree where users can post classified ads, buy and sell products, communicate in real time, and complete secure transactions through PayPal integration.",
+  "images": "/fennec/thumbnail.png",
+  "viewLink": "",
+  "gallery": {
+    "Homepage": "/fennec/home.png",
+    "Product": "/fennec/product.png",
+    "Login": "/fennec/login.png",
+    "Create Listing": "/fennec/add_post.png",
+    "User Profile": "/fennec/user_detail.png",
+    "Add Balance": "/fennec/add_balance.png",
+    "PayPal Checkout": "/fennec/paypal.png"
+  },
+  "developedBy": "Shakeeb Raza",
+  "author": "FissionFox Software Solutions",
+  "technologies": "PHP, Core PHP, MySQL, HTML5, CSS3, JavaScript (ES6+), jQuery, AJAX, WebSockets, Socket.IO, PayPal Payment Gateway, Responsive Design",
+  "longDescription": "Fennec is a feature-rich online marketplace platform inspired by Gumtree, enabling users to buy and sell products through classified listings. Users can create accounts, publish advertisements with images and detailed descriptions, browse products by category, and contact sellers through a real-time messaging system powered by WebSockets. The platform includes secure user authentication, profile management, listing management, search and filtering, and PayPal payment gateway integration for safe online transactions. Built with Core PHP, MySQL, HTML5, CSS3, JavaScript, AJAX, and Socket.IO, the application delivers a fast, responsive, and interactive marketplace experience across desktop and mobile devices."
 }
 ]
