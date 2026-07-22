@@ -274,5 +274,21 @@
   "author": "FissionFox Software Solutions",
   "technologies": "PHP, Core PHP, MySQL, HTML5, CSS3, JavaScript (ES6+), jQuery, AJAX, WebSockets, Socket.IO, PayPal Payment Gateway, Responsive Design",
   "longDescription": "Fennec is a feature-rich online marketplace platform inspired by Gumtree, enabling users to buy and sell products through classified listings. Users can create accounts, publish advertisements with images and detailed descriptions, browse products by category, and contact sellers through a real-time messaging system powered by WebSockets. The platform includes secure user authentication, profile management, listing management, search and filtering, and PayPal payment gateway integration for safe online transactions. Built with Core PHP, MySQL, HTML5, CSS3, JavaScript, AJAX, and Socket.IO, the application delivers a fast, responsive, and interactive marketplace experience across desktop and mobile devices."
+},
+{
+  "id": 15,
+  "slug": "price-bond-checker",
+  "title": "Price Bond Checker",
+  "category": "Mobile Application & Web Automation",
+  "description": "A React Native mobile application that allows users to verify multiple prize bond numbers in a single click by synchronizing with a web-based verification system and displaying instant results.",
+  "images": "/PriceBondChecker/thumbnail.png",
+  "viewLink": "",
+  "gallery": {
+    "Home Screen": "/PriceBondChecker/home.png"
+  },
+  "developedBy": "Shakeeb Raza",
+  "author": "Personal Project",
+  "technologies": "React Native, JavaScript (ES6+), JSON, REST APIs, AsyncStorage, Axios, HTML5, CSS3, PHP, Laravel",
+  "longDescription": "Price Bond Checker is a React Native mobile application developed to simplify the verification of multiple prize bond numbers. Users can import or enter thousands of bond numbers in JSON format, and with a single tap, the application securely sends the data to a Laravel-based web service through REST APIs. The backend processes all bond numbers, verifies them against the latest prize bond draw results, and instantly returns the matching winners. The application provides fast, accurate, and user-friendly result reporting while minimizing manual effort. It features efficient JSON processing, API communication, local data storage using AsyncStorage, and an intuitive mobile interface optimized for Android devices."
 }
 ]
