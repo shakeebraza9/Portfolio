@@ -1,15 +1,12 @@
 <template>
   <v-container class="mt-12 px-6 target-view-container" v-if="project">
-    
-
+    <!-- Ambient Glow Orb -->
     <div class="ambient-glow-orb"></div>
 
-
-    <v-row class="gy-10 position-relative z-index-2">
-      
-
+    <v-row class="gy-10 position-relative z-index-2 align-center">
+      <!-- Left Column: Holographic Hero Image -->
       <v-col cols="12" lg="6" class="d-flex align-center justify-center">
-        <div class="cyber-holo-frame">
+        <div class="cyber-holo-frame w-100">
           <div class="frame-corner tl"></div>
           <div class="frame-corner tr"></div>
           <div class="frame-corner bl"></div>
@@ -17,8 +14,9 @@
           
           <v-img
             :src="project.images?.split(',')[0] || project.image"
-            height="420"
-            class="lush-project-hero"
+            max-height="460"
+            min-height="360"
+            class="lush-project-hero w-100 rounded-xl"
             cover
           >
             <template v-slot:placeholder>
@@ -30,9 +28,8 @@
         </div>
       </v-col>
 
-
+      <!-- Right Column: Project Metadata & Actions -->
       <v-col cols="12" lg="6" class="d-flex flex-column justify-center">
-
         <div class="d-flex align-center mb-3">
           <span class="cyber-pulse-dot me-2"></span>
           <span class="text-overline font-weight-black tracking-widest neon-text">
@@ -40,17 +37,15 @@
           </span>
         </div>
         
-
         <h1 class="text-h3 font-weight-black mb-4 mega-gradient-title">
           {{ project.title }}
         </h1>
-
 
         <p class="text-body-1 lush-bio-text mb-6">
           {{ project.longDescription || project.description }}
         </p>
 
-
+        <!-- Developer & Author Cards -->
         <v-row class="mb-6 dense">
           <v-col cols="6" sm="6" v-if="project.developedBy">
             <div class="intel-stat-card pa-4">
@@ -73,9 +68,9 @@
           </v-col>
         </v-row>
 
-
+        <!-- Technologies Stack -->
         <div class="mb-8" v-if="project.technologies">
-          <div class="text-caption text-uppercase tracking-wider mb-2 font-weight-bold opacity-60">Tech InfrastructureStack:</div>
+          <div class="text-caption text-uppercase tracking-wider mb-2 font-weight-bold opacity-60">Tech Infrastructure Stack:</div>
           <div class="d-flex flex-wrap gap-2">
             <v-chip
               v-for="tech in project.technologies.split(',')"
@@ -91,28 +86,40 @@
         </div>
 
 
-        <div v-if="project.viewLink">
-          <v-btn
-            size="x-large"
-            variant="flat"
-            class="lush-action-btn font-weight-black rounded-xl px-8 py-4 text-button"
-            append-icon="mdi-rocket-launch-outline"
-            :href="project.viewLink"
-            target="_blank"
-          >
-            Launch Live System
-          </v-btn>
-        </div>
+      <div class="d-flex flex-wrap align-center gap-4" v-if="project.viewLink || project.videolink">
+        <v-btn
+          v-if="project.viewLink"
+          size="large"
+          variant="flat"
+          class="lush-action-btn font-weight-black rounded-xl px-7 py-4 text-button flex-grow-1 sm:flex-grow-0"
+          append-icon="mdi-rocket-launch-outline"
+          :href="project.viewLink"
+          target="_blank"
+        >
+          Launch Live System
+        </v-btn>
+
+        <v-btn
+          v-if="project.videolink"
+          size="large"
+          variant="outlined"
+          class="lush-video-btn font-weight-bold rounded-xl px-6 py-4 text-button flex-grow-1 sm:flex-grow-0"
+          prepend-icon="mdi-play-circle-outline"
+          @click="openVideo(project.videolink)"
+        >
+          Watch Walkthrough
+        </v-btn>
+      </div>
       </v-col>
     </v-row>
 
-
+    <!-- Gallery Section -->
     <div v-if="project.gallery && Object.keys(project.gallery).length" class="mt-16 position-relative z-index-2">
       <v-divider class="my-16 opacity-10" />
       
       <div class="mb-10 text-center text-sm-left">
         <h2 class="text-h4 font-weight-black mega-gradient-title d-inline-block">System Blueprint Gallery</h2>
-        <p class="text-body-2 lush-bio-text opacity-70 mt-1">Click interfaces below to expand deep micro-architectural views.</p>
+        <p class="text-body-2 lush-bio-text opacity-70 mt-1">Explore complete micro-architectural interfaces and visual documentation below.</p>
       </div>
 
       <v-row class="gy-6">
@@ -123,9 +130,9 @@
           v-for="(img, title) in project.gallery"
           :key="title"
         >
-          <div class="gallery-glass-wrapper" @click="openImage(img)">
-            <div class="gallery-overflow-container">
-              <v-img :src="img" height="240" cover class="gallery-lush-img" />
+          <div class="gallery-glass-wrapper h-100 d-flex flex-column" @click="openImage(img)">
+            <div class="gallery-overflow-container flex-grow-1">
+              <v-img :src="img" height="260" cover class="gallery-lush-img w-100" />
               <div class="gallery-glass-overlay d-flex align-center justify-center">
                 <v-btn icon="mdi-eye-outline" variant="flat" color="white" class="view-ico-btn"></v-btn>
               </div>
@@ -138,10 +145,10 @@
       </v-row>
     </div>
 
-
+    <!-- Image Lightbox Modal -->
     <v-dialog v-model="imageDialog" max-width="1100" transition="dialog-bottom-transition">
       <v-card class="premium-lightbox pa-3 rounded-2xl border-glass">
-        <v-img :src="selectedImage" max-height="800" contain class="rounded-xl" />
+        <v-img :src="selectedImage" max-height="800" contain class="rounded-xl w-100" />
         <v-card-actions class="justify-end pt-3">
           <v-btn color="grey-lighten-1" variant="tonal" class="rounded-lg font-weight-black px-4" @click="imageDialog = false">
             Minimize Matrix
@@ -149,9 +156,44 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
+<v-dialog v-model="videoDialog" :max-width="isShortsVideo ? 480 : 950" transition="dialog-bottom-transition">
+  <v-card class="premium-lightbox pa-4 rounded-2xl border-glass">
+    <div :class="['video-container rounded-xl overflow-hidden position-relative', { 'shorts-container': isShortsVideo }]">
+      <iframe
+        v-if="embedVideoUrl"
+        :src="embedVideoUrl"
+        width="100%"
+        :height="isShortsVideo ? '680' : '500'"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="d-block w-100"
+      ></iframe>
+    </div>
+    
+    <v-card-actions class="justify-space-between pt-4 px-2">
+      <!-- Direct YouTube redirect button agar user wahan dekhna chahe -->
+      <v-btn
+        color="cyan-accent-2"
+        variant="text"
+        prepend-icon="mdi-youtube"
+        :href="selectedVideoUrl"
+        target="_blank"
+        class="font-weight-bold text-caption"
+      >
+        Watch on YouTube
+      </v-btn>
+
+      <v-btn color="grey-lighten-1" variant="tonal" class="rounded-lg font-weight-black px-4" @click="videoDialog = false">
+        Close Stream
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</v-dialog>
   </v-container>
 
-
+  <!-- Loader State -->
   <v-container v-else class="text-center fill-height d-flex align-center justify-center dynamic-loader-screen">
     <div class="loader-matrix-core">
       <div class="spinner-neon-ring"></div>
@@ -161,7 +203,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -170,10 +212,27 @@ const project = ref(null)
 const imageDialog = ref(false)
 const selectedImage = ref('')
 
+const videoDialog = ref(false)
+const selectedVideoUrl = ref('')
+
 function openImage(img) {
   selectedImage.value = img
   imageDialog.value = true
 }
+
+function openVideo(url) {
+  selectedVideoUrl.value = url
+  videoDialog.value = true
+}
+
+const embedVideoUrl = computed(() => {
+  if (!selectedVideoUrl.value) return ''
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
+  const match = selectedVideoUrl.value.match(regExp)
+  return (match && match[2].length === 11)
+    ? `https://www.youtube.com/embed/${match[2]}?autoplay=1`
+    : selectedVideoUrl.value
+})
 
 onMounted(async () => {
   try {
@@ -187,7 +246,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-
 .target-view-container {
   position: relative;
   min-height: 90vh;
@@ -195,7 +253,7 @@ onMounted(async () => {
 .position-relative { position: relative; }
 .z-index-2 { z-index: 2; }
 .gap-2 { gap: 8px; }
-
+.gap-4 { gap: 16px; }
 
 .ambient-glow-orb {
   position: absolute;
@@ -212,14 +270,12 @@ onMounted(async () => {
 .v-theme--dark .ambient-glow-orb { background: radial-gradient(circle, #00f2fe 0%, #4facfe 100%); }
 .v-theme--light .ambient-glow-orb { background: radial-gradient(circle, #4f46e5 0%, #7c3aed 100%); }
 
-
 .cyber-holo-frame {
   position: relative;
   padding: 16px;
   background: rgba(255, 255, 255, 0.01);
   border-radius: 24px;
-  width: 100%;
-  max-width: 520px;
+  max-width: 560px;
   transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .v-theme--dark .cyber-holo-frame { border: 1px solid rgba(255, 255, 255, 0.04); box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
@@ -230,9 +286,8 @@ onMounted(async () => {
   transform: translateZ(0);
 }
 .cyber-holo-frame:hover {
-  transform: translateY(-8px) scale(1.01);
+  transform: translateY(-4px) scale(1.005);
 }
-
 
 .frame-corner {
   position: absolute;
@@ -246,7 +301,6 @@ onMounted(async () => {
 .frame-corner.tr { top: 0; right: 0; border-left: 0; border-bottom: 0; border-top-right-radius: 12px; }
 .frame-corner.bl { bottom: 0; left: 0; border-right: 0; border-top: 0; border-bottom-left-radius: 12px; }
 .frame-corner.br { bottom: 0; right: 0; border-left: 0; border-top: 0; border-bottom-right-radius: 12px; }
-
 
 .mega-gradient-title {
   font-weight: 900 !important;
@@ -305,7 +359,6 @@ onMounted(async () => {
 .v-theme--light .lush-tech-chip { background: rgba(15, 23, 42, 0.03) !important; color: #334155 !important; border: 1px solid rgba(15, 23, 42, 0.05); }
 .v-theme--light .lush-tech-chip:hover { border-color: #4f46e5; color: #4f46e5 !important; }
 
-
 .lush-action-btn {
   text-transform: none !important;
   letter-spacing: 0.5px !important;
@@ -317,6 +370,31 @@ onMounted(async () => {
 .v-theme--light .lush-action-btn { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important; color: #ffffff !important; }
 .v-theme--light .lush-action-btn:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(79, 70, 229, 0.2) !important; }
 
+.lush-video-btn {
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.v-theme--dark .lush-video-btn {
+  border: 1px solid rgba(0, 242, 254, 0.4) !important;
+  color: #00f2fe !important;
+  background: rgba(0, 242, 254, 0.04) !important;
+}
+.v-theme--dark .lush-video-btn:hover {
+  background: rgba(0, 242, 254, 0.12) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15);
+}
+.v-theme--light .lush-video-btn {
+  border: 1px solid rgba(79, 70, 229, 0.4) !important;
+  color: #4f46e5 !important;
+  background: rgba(79, 70, 229, 0.03) !important;
+}
+.v-theme--light .lush-video-btn:hover {
+  background: rgba(79, 70, 229, 0.08) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
 
 .gallery-glass-wrapper {
   border-radius: 20px;
@@ -360,10 +438,8 @@ onMounted(async () => {
 .v-theme--dark .gallery-card-title { color: #cbd5e1; }
 .v-theme--light .gallery-card-title { color: #1e293b; }
 
-
-.premium-lightbox { background: rgba(10, 10, 12, 0.85) !important; backdrop-filter: blur(20px); }
+.premium-lightbox { background: rgba(10, 10, 12, 0.9) !important; backdrop-filter: blur(20px); }
 .border-glass { border: 1px solid rgba(255, 255, 255, 0.08) !important; }
-
 
 .dynamic-loader-screen { min-height: 80vh; }
 .loader-matrix-core { display: inline-block; position: relative; }

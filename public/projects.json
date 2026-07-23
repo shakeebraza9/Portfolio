@@ -17,6 +17,7 @@
       "Admin Panel Create Product": "/therareperfumes/createproduct.png",
       "Admin Panel List Product": "/therareperfumes/list.png"
     },
+    "videolink": "https://www.youtube.com/watch?v=PAon78PXyvY",
     "technologies": "HTML,CSS,Laravel,MYSQL,Jquery,AJAX",
     "longDescription": "Designed and developed a complete e-commerce solution for a perfume brand. The platform includes a dynamic product catalog, advanced product filtering, shopping cart functionality, and a smooth checkout process. Implemented an admin panel for product management, order handling, and content updates. Focused on responsive design, performance optimization, and user-friendly UI to ensure a seamless shopping experience across all devices."
   },
@@ -37,6 +38,7 @@
       "Attractions Page": "/langkawibook/attractions.png",
       "Attractions Details": "/langkawibook/attractions_details.png"
     },
+    "videolink": "https://www.youtube.com/watch?v=Us0LyJn-oQU", 
     "longDescription": "Developed a comprehensive business website for vehicle rentals and tourism services. The system allows users to explore vehicles, search and filter options, and view attractions with detailed information. Built using Laravel with a strong backend structure and a responsive frontend. Emphasis was placed on usability, clean design, and performance to support both local and international users."
   },
   {
@@ -54,6 +56,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Muhammad Shakeeb Raza",
     "technologies": "HTML,CSS,Laravel,Google Sheet,Jquery,AJAX",
+    "videolink": "",
     "longDescription": "Created a professional business website for a surgical instruments company. The project includes category-based product listings, dynamic content management, and Google Sheet integration for easy data handling. Focused on simplicity, clarity, and maintainability while ensuring the platform effectively represents the brand and its product offerings."
   },
   {
@@ -72,6 +75,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Muhammad Shakeeb Raza",
     "technologies": "HTML 5,CSS 3,Javascript,Laravel,PHP,Jquery",
+    "videolink": "",
     "longDescription": "Developed a coupon-based website that allows users to browse deals, offers, and categories with ease. Implemented a clean UI, dynamic content loading, and category-based filtering. The platform is optimized for performance and usability, making it easy for users to find relevant discounts while providing a scalable backend for future growth."
   },
   {
@@ -97,6 +101,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Muhammad Shakeeb Raza",
     "technologies": "Vue.js, PHP, Laravel, Tailwind CSS, JavaScript, JQuery, Socket.io, Redis, MySQL, Docker, AWS (EC2), Nginx, Python Selenium",
+    "videolink": "",
     "longDescription": "Autoboli is a premium, real-time automobile auction system engineered to handle concurrent high-velocity bidding loops. The core engine is built using Laravel and Vue.js, featuring real-time state synchronization via Socket.io and Redis memory layers to achieve sub-millisecond data updates during active biddings. Deployed in containerized Docker microservices on AWS, the architecture incorporates smart search modules, advanced multi-parameter vehicle filters, a secure multi-tier financial checkout terminal, and a comprehensive admin monitoring matrix for dynamic live inventory operations."
   },
   {
@@ -117,6 +122,7 @@
     "developedBy": "Shakeeb Raza, Owais Azam",
     "author": "Owais Azam",
     "technologies": "PHP, Laravel, JavaScript (ES6+), jQuery, MySQL, Tailwind CSS, HTML5, CSS3, Dynamic PDF Generation Engines",
+    "videolink": "",
     "longDescription": "A robust commercial-grade Point of Sale (POS) and Enterprise Resource Planning framework designed to scale retail operations. Built using Laravel's robust MVC architecture, the platform orchestrates complex inventory tracking modules, multi-vendor procurement pipelines, and dynamic real-time financial ledger calculation matrices. Features a streamlined frontend for rapid transaction checkouts, responsive data grids for auditing, automated PDF invoice generation loops, and localized secure terminal sessions tailored to maximize data processing speed and minimize database deadlock latencies during concurrent checkout flows."
   },
   {
@@ -133,6 +139,7 @@
     "developedBy": "Shakeeb Raza, Owais Azam",
     "author": "Kreatix Solutions",
     "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Responsive Layout Frameworks",
+    "videolink": "",
     "longDescription": "A premium enterprise-level Fitness & Gym Operations Platform built to orchestrate end-to-end client conversion pipelines and membership workflows. Engineered using a structured PHP backend architecture coupled with a highly responsive frontend matrix, the system flawlessly handles dynamic membership tiered subscriptions, digital client intake operations, class schedules, and automated operational logging. The interface is optimized to deliver ultra-fast content delivery, clean data tracking for gym admins, and a seamless client experience designed to maximize member retention and simplify day-to-day fitness facility automation."
   },
   {
@@ -151,6 +158,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Imedia Software Solutions",
     "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, Core SEO Optimization Frameworks",
+    "videolink": "",
     "longDescription": "A premium enterprise-level corporate web ecosystem built to display end-to-end IT consulting pipelines and custom digital product architectures. Engineered using a highly modular PHP architecture and optimized for ultra-fast load times, the platform delivers clean data presentation for diverse software development pipelines, service listings, and integrated enterprise client acquisition forms. The frontend features smooth layouts, responsive interface mechanics, and strict cross-device accessibility matrices designed to establish maximum corporate authority and seamless user conversions."
   },
   {
@@ -170,6 +178,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Imedia Software Solutions",
     "technologies": "PHP, MySQL, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, Advanced Data Grid Filtration, Core SEO Architectures",
+    "videolink": "",
     "longDescription": "SmartDentalInnovations is a cutting-edge healthcare informatics and product presentation ecosystem built to streamline dental asset discovery and corporate clinical outreach. Developed using a highly optimized and secure PHP architecture, the platform features a multi-tiered diagnostic and product catalog matrix with advanced multi-parameter filtering grids. The system is engineered for sub-second page performance, featuring secure client intake funnels, cross-device clinical compliance rendering, and search engine optimization frameworks designed to anchor maximum authority in the global biomedical and dental tech marketplace."
   },
   {
@@ -192,6 +201,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Imedia Software Solutions",
     "technologies": "PHP, WordPress, Custom WordPress Plugins, Laravel REST APIs, HTML5, CSS3, JavaScript (ES6+), jQuery, Bootstrap, MySQL, AJAX, WooCommerce, Responsive Design, SEO",
+    "videolink": "",
     "longDescription": "Recycle Pro is a feature-rich electronics e-commerce platform developed using WordPress with custom PHP development and Laravel REST APIs. The platform enables customers to browse and purchase refurbished and recycled electronic devices, including mobile phones, laptops, tablets, gaming consoles, smartwatches, headphones, and accessories. It includes custom WordPress plugins to extend business functionality, advanced product and category management, secure shopping cart and checkout, responsive design, and optimized performance. Laravel APIs power custom business logic and seamless data integration, while HTML5, CSS3, JavaScript, jQuery, and Bootstrap provide a fast, modern, and user-friendly shopping experience across all devices."
   },
   {
@@ -208,6 +218,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Client Project",
     "technologies": "Python, Selenium, BeautifulSoup4, WebDriver, Requests, Pandas, CSV, JSON, MySQL, Cron Jobs",
+    "videolink": "https://www.youtube.com/shorts/BU6swmXENss",
     "longDescription": "Developed advanced Python-based web scraping bots to automate the collection of vehicle auction data from multiple online auction platforms, including BCA, CCA, Aston Barclay, and Manheim. The bots were built using Selenium WebDriver and BeautifulSoup to handle dynamic content, automated browser interactions, pagination, login sessions, and detailed vehicle information extraction. The scraped data was cleaned, validated, and exported into structured CSV, JSON, and MySQL databases for reporting and analytics. The automation significantly reduced manual effort while ensuring accurate, real-time vehicle inventory data with scheduled execution through cron jobs."
   },
     {
@@ -229,6 +240,7 @@
     "developedBy": "Shakeeb Raza",
     "author": "Fissionfox Software Solutions",
     "technologies": "PHP, WordPress, Custom WordPress Plugins, JavaScript (ES6+), jQuery, HTML5, CSS3, Bootstrap, MySQL, AJAX, QR Code Integration, Attendance Management System",
+    "videolink": "",
     "longDescription": "Norajo Karaoke is a custom-developed WordPress platform designed for managing karaoke events and attendee check-ins through an integrated QR Code Attendance Management System. The application enables administrators to create and manage events, register participants, generate unique QR codes, and track attendance in real time through a centralized dashboard. Custom WordPress plugins were developed to extend platform functionality, while PHP handled the backend business logic and MySQL managed all event and attendance records. JavaScript, jQuery, HTML5, CSS3, and Bootstrap were used to build a responsive and user-friendly interface, ensuring smooth event operations across desktop and mobile devices."
   },
   {
@@ -251,6 +263,7 @@
   "developedBy": "Shakeeb Raza",
   "author": "FissionFox Software Solutions",
   "technologies": "PHP, Laravel, MySQL, Blade, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, REST APIs, AJAX, Responsive Design",
+  "videolink": "",
   "longDescription": "MRR Holidays is a modern travel and tourism booking platform developed using Laravel and MySQL, designed to simplify online reservations for car rentals, attraction tickets, and holiday experiences. The platform features dynamic booking workflows, real-time API integrations, advanced search and filtering, secure reservation management, and a responsive user interface. Blade templates, HTML5, CSS3, JavaScript, and Tailwind CSS were used to create a fast and intuitive frontend, while Laravel powers the backend with clean architecture, secure business logic, and seamless API communication. The platform is optimized for performance, scalability, and a smooth booking experience across desktop and mobile devices."
 },
 {
@@ -273,6 +286,7 @@
   "developedBy": "Shakeeb Raza",
   "author": "FissionFox Software Solutions",
   "technologies": "PHP, Core PHP, MySQL, HTML5, CSS3, JavaScript (ES6+), jQuery, AJAX, WebSockets, Socket.IO, PayPal Payment Gateway, Responsive Design",
+  "videolink": "",
   "longDescription": "Fennec is a feature-rich online marketplace platform inspired by Gumtree, enabling users to buy and sell products through classified listings. Users can create accounts, publish advertisements with images and detailed descriptions, browse products by category, and contact sellers through a real-time messaging system powered by WebSockets. The platform includes secure user authentication, profile management, listing management, search and filtering, and PayPal payment gateway integration for safe online transactions. Built with Core PHP, MySQL, HTML5, CSS3, JavaScript, AJAX, and Socket.IO, the application delivers a fast, responsive, and interactive marketplace experience across desktop and mobile devices."
 },
 {
@@ -289,6 +303,7 @@
   "developedBy": "Shakeeb Raza",
   "author": "Personal Project",
   "technologies": "React Native, JavaScript (ES6+), JSON, REST APIs, AsyncStorage, Axios, HTML5, CSS3, PHP, Laravel",
+  "videolink": "", 
   "longDescription": "Price Bond Checker is a React Native mobile application developed to simplify the verification of multiple prize bond numbers. Users can import or enter thousands of bond numbers in JSON format, and with a single tap, the application securely sends the data to a Laravel-based web service through REST APIs. The backend processes all bond numbers, verifies them against the latest prize bond draw results, and instantly returns the matching winners. The application provides fast, accurate, and user-friendly result reporting while minimizing manual effort. It features efficient JSON processing, API communication, local data storage using AsyncStorage, and an intuitive mobile interface optimized for Android devices."
 }
 ]
